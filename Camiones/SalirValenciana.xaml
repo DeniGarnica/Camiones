@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Camiones.SalirValenciana"
+             BackgroundColor="#907BAB">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <BoxView Grid.Row="0" BackgroundColor="#302574" HeightRequest="40" />
+
+        <Label Text="Seleccione su parada de llegada" Grid.Row="0" HorizontalOptions="Center" VerticalOptions="Center" FontSize="Title" TextColor="White"/>
+
+        <StackLayout Grid.Row="1" VerticalOptions="EndAndExpand" HorizontalOptions="Center">
+            <Button Text="Alohóndiga" Clicked="Button_Clicked" CornerRadius="20"/>
+            <Button Text="Dos Ríos" Clicked="Button_Clicked_1" CornerRadius="20"/>
+            <Button Text="Escuela de Minas" Clicked="Button_Clicked_2" CornerRadius="20"/>
+            <Button Text="Templo de San Javier" Clicked="Button_Clicked_3" CornerRadius="20"/>
+            <Button Text="Trompo San Javier" Clicked="Button_Clicked_4" CornerRadius="20"/>
+        </StackLayout>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Camiones.ElegirPage"
+             BackgroundColor="#907BAB">
+    <Grid ColumnSpacing="50" RowSpacing="50">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <BoxView Grid.Row="0" BackgroundColor="#302574" HeightRequest="40" />
+
+        <Label Text="Horarios de Camiones" Grid.Row="0" HorizontalOptions="Center" VerticalOptions="Center" FontSize="Title" TextColor="White" />
+
+        <StackLayout Grid.Row="1" VerticalOptions="Center" HorizontalOptions="Center">
+            <Button Text="Llegar a Valenciana" Clicked="Button_Clicked_1" CornerRadius="20"/>
+            <Button Text="Salir de Valenciana" Clicked="Button_Clicked" CornerRadius="20"/>
+        </StackLayout>
+    </Grid>
+</ContentPage>
